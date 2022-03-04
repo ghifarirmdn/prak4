@@ -32,9 +32,39 @@ class DetailScreen extends StatelessWidget{
                       Text("Open Everyday"),
                     ],
                   ),
+                  Column(
+                    children: const <Widget> [
+                      Icon(Icons.timer_rounded),
+                      Text("08.00 - 16.00"),
+                    ],
+                  ),
+                  Column(
+                    children: const <Widget> [
+                      Icon(Icons.attach_money),
+                      Text("Rp 10.000,-"),
+                    ],
+                  ),
                 ],
               ),
             ),
+            // Container(
+            //   margin: const EdgeInsets.symmetric(vertical: 16.0),
+            //   child: Row(
+            //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //     children: <Widget>[
+            //
+            //     ],
+            //   ),
+            // ),
+            // Container(
+            //   margin: const EdgeInsets.symmetric(vertical: 16.0),
+            //   child: Row(
+            //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //     children: <Widget>[
+            //
+            //     ],
+            //   ),
+            // ),
             Container(
               padding: const EdgeInsets.all(16.0),
               child: const Text(
