@@ -13,7 +13,7 @@ class DetailScreen extends StatelessWidget{
             Container(
               margin: const EdgeInsets.only(top: 16.0),
               child: const Text(
-                "Surabaya Submarine Monument",
+                "Surabaya Submarine",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 30.0,
@@ -47,24 +47,6 @@ class DetailScreen extends StatelessWidget{
                 ],
               ),
             ),
-            // Container(
-            //   margin: const EdgeInsets.symmetric(vertical: 16.0),
-            //   child: Row(
-            //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            //     children: <Widget>[
-            //
-            //     ],
-            //   ),
-            // ),
-            // Container(
-            //   margin: const EdgeInsets.symmetric(vertical: 16.0),
-            //   child: Row(
-            //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            //     children: <Widget>[
-            //
-            //     ],
-            //   ),
-            // ),
             Container(
               padding: const EdgeInsets.all(16.0),
               child: const Text(
