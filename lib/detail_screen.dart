@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:prak3/model/tourism_place.dart';
 
 class DetailScreen extends StatelessWidget{
-  const DetailScreen({Key? key}) : super(key: key);
+  const DetailScreen({Key? key, required this.place}) : super(key: key);
+
+  final TourismPlace place;
 
   @override
   Widget build(BuildContext context){
@@ -9,13 +12,13 @@ class DetailScreen extends StatelessWidget{
       body: SafeArea(
         child: ListView(
           children: <Widget>[
-            Image.asset('assets/foto.jpeg'),
+            Image.asset(place.imageAsset),
             Container(
               margin: const EdgeInsets.only(top: 16.0),
-              child: const Text(
-                "Surabaya Submarine",
+              child: Text(
+                place.name,
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 30.0,
                   fontWeight: FontWeight.bold,
                 ),
@@ -62,19 +65,15 @@ class DetailScreen extends StatelessWidget{
                   children: <Widget>[
                     Padding(
                       padding: const EdgeInsets.all(4.0),
-                      child: Image.network('https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg'),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(4.0),
-                      child: Image.asset('assets/foto.jpeg'),
+                      child: Image.asset(place.galerry[0]),
                     ),
                     Padding(
                         padding: const EdgeInsets.all(4.0),
-                        child: Image.asset('assets/foto.jpeg'),
+                        child: Image.asset(place.galerry[1]),
                     ),
                     Padding(
                         padding: const EdgeInsets.all(4.0),
-                        child: Image.asset('assets/foto.jpeg'),
+                        child: Image.asset(place.galerry[2]),
                     ),
                   ],
                 ),

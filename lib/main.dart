@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:prak3/detail_screen.dart';
+import 'package:prak3/main_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Wisata Surabaya',
       theme: ThemeData(),
-      home: const DetailScreen(),
+      home: const MainScreen(),
     );
   }
 }
